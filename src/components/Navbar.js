@@ -2,7 +2,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-lg-3 px-lg-5">
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-lg-3 px-lg-5"
+      id="myportfolio_nav"
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           Abhishek
@@ -26,10 +29,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item px-lg-2">
-              <a
-                className="nav-link text-dark"
-                href="/index.html#myportfolio_about"
-              >
+              <a className="nav-link text-dark" href="#myportfolio_about">
                 About
               </a>
             </li>

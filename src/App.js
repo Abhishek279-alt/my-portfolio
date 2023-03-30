@@ -7,6 +7,12 @@ function App() {
   return (
     <div>
       <Navbar />
+      <a
+        href="#myportfolio_nav"
+        className="btn btn-secondary fw-bold scroll-up"
+      >
+        &#8593;
+      </a>
       <Hero />
       <About />
     </div>
