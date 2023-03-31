@@ -2,6 +2,7 @@
   --color-one: #ffffff;
   --color-two: #474554;
   --color-three: #aca7cb;
+  --color-four: #f1f0f5;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
   background: url("./assets/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   padding-top: 10rem;
 }
 
@@ -41,6 +42,36 @@ body {
   z-index: 2;
   position: fixed;
   top: 90vh;
-  right: 5px;
+  right: 10px;
   border-radius: 50%;
+}
+
+#myportfolio_project {
+  background-color: var(--color-four);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-rows: auto;
+  row-gap: 3rem;
+  justify-items: center;
+}
+
+.card {
+  width: clamp(20rem, 22rem, 24rem);
+}
+
+.card-img-top {
+  cursor: pointer;
+}
+
+.footer-links {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-links:hover > a,
+.footer-links:hover > p {
+  color: var(--color-three) !important;
 }
