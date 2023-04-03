@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <footer id="myportfolio_contact" className="bg-dark p-3">
+    <footer id="myportfolio_contact" className="bg-dark p-3 container-fluid">
       <div className="row">
         <div className="col-12 text-secondary text-center fs-2 fw-bold text-decoration-underline my-5">
           Contact

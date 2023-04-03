@@ -34,7 +34,7 @@ const Project = () => {
     },
   ];
   return (
-    <div id="myportfolio_project" className="p-5">
+    <section id="myportfolio_project" className="p-5 container-fluid">
       <div className="row">
         <div className="col-12 text-secondary text-center fs-2 fw-bold text-decoration-underline my-5">
           Projects
@@ -58,11 +58,17 @@ const Project = () => {
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text text-secondary">{project.desc}</p>
                   </div>
-                  <div className="card-footer">
-                    <a href={project.demo} className="btn-sm btn-dark">
+                  <div className="card-footer py-3">
+                    <a
+                      href={project.demo}
+                      className="btn-sm btn-dark text-decoration-none p-2 me-1"
+                    >
                       Live Demo
                     </a>
-                    <a href={project.code} className="btn-sm btn-outline-dark">
+                    <a
+                      href={project.code}
+                      className="btn-sm btn-outline-dark text-decoration-none p-2 ms-1 border border-dark"
+                    >
                       Get Code
                     </a>
                   </div>
@@ -72,7 +78,7 @@ const Project = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

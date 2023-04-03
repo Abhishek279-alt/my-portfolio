@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       </a>
       <Hero />
       <About />
+      <Skills />
       <Project />
       <Contact />
     </div>

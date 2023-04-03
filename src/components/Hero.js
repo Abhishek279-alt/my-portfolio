@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="portfolio-hero bg-hero shadow" id="myportfolio-hero">
+    <section
+      className="portfolio-hero bg-hero shadow container-fluid"
+      id="myportfolio-hero"
+    >
       <div className="hero_box row p-5">
         <div id="hero_description" className="col-10 mx-auto my-3">
           <div className="fs-1 text-light fw-bold">Hello,</div>
