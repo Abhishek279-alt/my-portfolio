@@ -15,6 +15,19 @@ body {
   font-size: 1.2rem;
 }
 
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--color-three) !important;
+}
+
+.navbar-brand {
+  color: var(--color-two) !important;
+  font-weight: 600;
+}
+
 .bg-hero {
   background-color: var(--color-two);
 }
@@ -38,6 +51,10 @@ body {
   object-fit: cover;
 }
 
+.font-about {
+  font-size: 3vh;
+}
+
 .scroll-up {
   z-index: 2;
   position: fixed;
@@ -56,6 +73,20 @@ body {
   grid-template-rows: auto;
   row-gap: 3rem;
   justify-items: center;
+}
+
+@media (max-width: 450px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-rows: auto;
+    row-gap: 3rem;
+    justify-items: center;
+  }
+  .font-about {
+    font-size: 2.5vh;
+    text-align: justify;
+  }
 }
 
 .card {

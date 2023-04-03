@@ -13,7 +13,7 @@ const About = () => {
         <div className="col-lg-5 col-md-10 col-sm-10 my-pic mb-md-3 mb-sm-3">
           <img src={myProfile} alt="about_me" className="img-fluid" />
         </div>
-        <div className="col-lg-5 col-md-10 col-sm-10 fs-4 text-lg-start text-md-center text-sm-center">
+        <div className="col-lg-5 col-md-10 col-sm-10 fs-lg-4 font-about text-lg-start text-md-center text-sm-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sint
           autem corporis sequi non incidunt voluptate omnis, fugit molestiae
           neque veritatis doloremque hic ut, tenetur consequuntur ratione id

@@ -7,8 +7,8 @@ const Navbar = () => {
       id="myportfolio_nav"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Abhishek
+        <a className="navbar-brand fs-4 " href="/">
+          {"{dev.abhi}"}
         </a>
         <button
           className="navbar-toggler"
@@ -34,12 +34,17 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item px-lg-2">
-              <a className="nav-link text-dark" href="/">
+              <a className="nav-link text-dark" href="#myportfolio_skills">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item px-lg-2">
+              <a className="nav-link text-dark" href="#myportfolio_project">
                 Projects
               </a>
             </li>
             <li className="nav-item px-lg-2">
-              <a className="nav-link text-dark" href="/">
+              <a className="nav-link text-dark" href="#myportfolio_contact">
                 Contact
               </a>
             </li>
