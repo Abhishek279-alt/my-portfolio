@@ -106,3 +106,15 @@ body {
 .footer-links:hover > p {
   color: var(--color-three) !important;
 }
+
+.project-modal {
+  width: 90vw;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 2vh 6vw;
+}
+.modal-content {
+  display: none;
+}

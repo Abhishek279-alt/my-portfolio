@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
+import weatherImg from "../assets/i-weather.png";
 
 const Project = () => {
   const [show, setShow] = useState(false);
@@ -9,28 +10,11 @@ const Project = () => {
 
   const projectArray = [
     {
-      title: "Lorem Ipsum",
-      desc: "Lorem Ipsum some random text",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-      demo: "http://localhost:3000/",
-      code: "http://localhost:3000/",
-    },
-    {
-      title: "Lorem Ipsum",
-      desc: "Lorem Ipsum some random text",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-      demo: "http://localhost:3000/",
-      code: "http://localhost:3000/",
-    },
-    {
-      title: "Lorem Ipsum",
-      desc: "Lorem Ipsum some random text",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
-      demo: "http://localhost:3000/",
-      code: "http://localhost:3000/",
+      title: "i-weather-info",
+      desc: "React Weather App",
+      image: weatherImg,
+      demo: "https://i-weather-info.netlify.app/",
+      code: "https://github.com/Abhishek279-alt/i-weather-info",
     },
   ];
   return (
@@ -41,13 +25,16 @@ const Project = () => {
         </div>
         <div className="projects-container my-5">
           {projectArray.map((project) => {
-            let key = projectArray.indexOf(project);
+            let id = projectArray.indexOf(project);
             return (
-              <>
-                <Modal show={show} onHide={handleClose}>
-                  <img src={project.image} alt="" />
-                </Modal>
-                <div className="card shadow-sm" key={key}>
+              <div key={id}>
+                <Modal
+                  show={show}
+                  onHide={handleClose}
+                  className="project-modal"
+                  style={{ backgroundImage: `url(${project.image})` }}
+                ></Modal>
+                <div className="card shadow-sm">
                   <img
                     src={project.image}
                     className="card-img-top"
@@ -62,18 +49,22 @@ const Project = () => {
                     <a
                       href={project.demo}
                       className="btn-sm btn-dark text-decoration-none p-2 me-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Live Demo
                     </a>
                     <a
                       href={project.code}
                       className="btn-sm btn-outline-dark text-decoration-none p-2 ms-1 border border-dark"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Get Code
                     </a>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>

@@ -12,19 +12,34 @@ const Contact = () => {
         </div>
         <div className="col-12 text-center d-flex flex-lg-row flex-md-row flex-sm-column justify-content-center">
           <span className="p-2 m-3 footer-links">
-            <a href="/" className="text-light fs-2">
+            <a
+              href="https://github.com/Abhishek279-alt/"
+              className="text-light fs-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
             <p className="text-light">Github</p>
           </span>
           <span className="p-2 m-3 footer-links">
-            <a href="/" className="text-light fs-2">
+            <a
+              href="https://www.linkedin.com/in/abhishek-singh-rajput-0109621a7/"
+              className="text-light fs-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-linkedin"></i>
             </a>
             <p className="text-light">LinkedIn</p>
           </span>
           <span className="p-2 m-3 footer-links">
-            <a href="/" className="text-light fs-2">
+            <a
+              href="https://www.instagram.com/dev.abhi9/"
+              className="text-light fs-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-instagram"></i>
             </a>
             <p className="text-light">Instagram</p>
