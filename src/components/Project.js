@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import Modal from "react-bootstrap/Modal";
+import React from "react";
 import weatherImg from "../assets/i-weather.png";
 import TodoImg from "../assets/todo.jpg";
 
 const Project = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   const projectArray = [
     {
       title: "i-weather-info",
@@ -39,19 +33,18 @@ const Project = () => {
             let techs = project.tech;
             return (
               <div key={id}>
-                <Modal
-                  show={show}
-                  onHide={handleClose}
-                  className="project-modal"
-                  style={{ backgroundImage: `url(${project.image})` }}
-                ></Modal>
                 <div className="card shadow-sm">
-                  <img
-                    src={project.image}
-                    className="card-img-top"
-                    alt="..."
-                    onClick={handleShow}
-                  />
+                  <a
+                    href={project.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={project.image}
+                      className="card-img-top"
+                      alt="..."
+                    />
+                  </a>
                   <div className="card-body">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text text-secondary">{project.desc}</p>

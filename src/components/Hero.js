@@ -1,4 +1,5 @@
 import React from "react";
+import myResume from "../assets/ABHISHEK SINGH RAJPUT_RESUME.pdf";
 
 const Hero = () => {
   return (
@@ -17,7 +18,12 @@ const Hero = () => {
           <a href="#myportfolio_project" className="btn btn-light fs-5 me-2">
             Projects
           </a>
-          <a href="/" className="btn btn-outline-light fs-5 mx-2">
+          <a
+            href={myResume}
+            className="btn btn-outline-light fs-5 mx-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Resume
           </a>
         </div>

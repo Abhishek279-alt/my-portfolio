@@ -14,14 +14,9 @@ const About = () => {
           <img src={myProfile} alt="about_me" className="img-fluid" />
         </div>
         <div className="col-lg-5 col-md-10 col-sm-10 fs-lg-4 font-about text-lg-start text-md-center text-sm-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sint
-          autem corporis sequi non incidunt voluptate omnis, fugit molestiae
-          neque veritatis doloremque hic ut, tenetur consequuntur ratione id
-          consequatur provident. Repellat vero, asperiores esse doloremque,
-          obcaecati exercitationem harum molestias provident voluptatem culpa ut
-          adipisci consequatur? Porro velit modi voluptate doloribus iste nam
-          facere id mollitia dolorum voluptates impedit, in assumenda blanditiis
-          quod, possimus laborum?
+          I am a Web Delveloper building websites and web apps. I usually work
+          in React for Frontend development but also skilled in some backend
+          technologies.
         </div>
       </div>
     </section>
