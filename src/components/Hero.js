@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-links col-10 mx-auto my-4">
-          <a href="/" className="btn btn-light fs-5 me-2">
+          <a href="#myportfolio_project" className="btn btn-light fs-5 me-2">
             Projects
           </a>
           <a href="/" className="btn btn-outline-light fs-5 mx-2">
