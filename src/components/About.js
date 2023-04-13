@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="col-lg-5 col-md-10 col-sm-10 fs-lg-4 font-about text-lg-start text-md-center text-sm-center">
           I am a Web Delveloper building websites and web apps. I usually work
-          in React for Frontend development but also skilled in some backend
+          with React for Frontend development but also skilled in some backend
           technologies.
         </div>
       </div>
