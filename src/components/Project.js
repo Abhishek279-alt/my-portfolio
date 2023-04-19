@@ -1,6 +1,7 @@
 import React from "react";
 import weatherImg from "../assets/i-weather.png";
 import TodoImg from "../assets/todo.jpg";
+import reactExpressImg from "../assets/react_express.jpg";
 
 const Project = () => {
   const projectArray = [
@@ -19,6 +20,14 @@ const Project = () => {
       tech: ["React", "NodeJs", "MySql", "Rest API"],
       demo: "/",
       code: "https://github.com/Abhishek279-alt/react-todo-app",
+    },
+    {
+      title: "React Express",
+      desc: "React News App",
+      image: reactExpressImg,
+      tech: ["React", "Axios"],
+      demo: "https://www.instagram.com/p/CrOJLxlyRSn/",
+      code: "https://github.com/Abhishek279-alt/react-express",
     },
   ];
   return (
