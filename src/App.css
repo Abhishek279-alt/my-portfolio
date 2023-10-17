@@ -118,3 +118,9 @@ body {
 .modal-content {
   display: none;
 }
+
+@media (max-width: 576px) {
+  #myportfolio_skills {
+    flex-direction: column !important;
+  }
+}
