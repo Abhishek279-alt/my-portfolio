@@ -3,6 +3,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Skills />
       <Project />
+      <Portfolio />
       <Contact />
     </div>
   );

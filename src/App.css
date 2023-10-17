@@ -118,9 +118,23 @@ body {
 .modal-content {
   display: none;
 }
+.gallery_images {
+  transition: all 0.33s ease-in-out;
+}
+.gallery_images:hover {
+  transform: scale(2.5);
+  z-index: 2;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
 
 @media (max-width: 576px) {
   #myportfolio_skills {
     flex-direction: column !important;
+  }
+  .gallery_container {
+    width: 100% !important;
   }
 }
